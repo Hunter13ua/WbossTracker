@@ -1,0 +1,36 @@
+[
+    {
+        "doom": {
+            "canSpawn": true,
+            "scouts": [],
+            "windowClose": "20/08/2021, 03:32:03",
+            "windowOpens": "18/08/2021, 15:31:03"
+        },
+        "kaz": {
+            "canSpawn": true,
+            "scouts": [
+                "Alexandar"
+            ],
+            "windowClose": "20/08/2021, 03:32:03",
+            "windowOpens": "18/08/2021, 15:31:03"
+        },
+        "lastMsgID": 877600648013705228
+    },
+    {
+        "doom": {
+            "canSpawn": true,
+            "scouts": [
+                "Alexandar"
+            ],
+            "windowClose": "20/08/2021, 04:10:28",
+            "windowOpens": "18/08/2021, 16:09:28"
+        },
+        "kaz": {
+            "canSpawn": true,
+            "scouts": [],
+            "windowClose": "20/08/2021, 04:10:28",
+            "windowOpens": "18/08/2021, 16:09:28"
+        },
+        "lastMsgID": 877601254665244753
+    }
+]

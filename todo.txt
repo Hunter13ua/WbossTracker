@@ -1,0 +1,12 @@
+todo list:
+- !kick
+- auto-message when window opens
+- discord server-specific names instead of discord-account names
+- after !off if no scouts left - message in #scout-replacements
+
+notes: 
+https://discordpy.readthedocs.io/en/stable/ext/tasks/index.html
+loops - check time every 1-5mins, check windows/scouts?
+
+author.name / author.display_name
+
