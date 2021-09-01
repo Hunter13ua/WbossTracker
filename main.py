@@ -176,16 +176,17 @@ async def on_message(msg):
   update_windows_status(l)
 
   formattedmsg = msg.content.lower()
+  personName = msg.author.display_name
   
   #!on command
   if msg.content.startswith("!on"):
     if 'kaz' in formattedmsg or 'both' in formattedmsg :
-      if msg.author.name not in layers[l].kaz.scouts :
-        layers[l].kaz.scouts.append(msg.author.name)
+      if personName not in layers[l].kaz.scouts :
+        layers[l].kaz.scouts.append(personName)
       flag = True
     if 'doom' in formattedmsg or 'both' in formattedmsg :
-      if msg.author.name not in layers[l].doom.scouts :
-        layers[l].doom.scouts.append(msg.author.name)
+      if personName not in layers[l].doom.scouts :
+        layers[l].doom.scouts.append(personName)
       flag = True
 
   #!off command
@@ -194,12 +195,12 @@ async def on_message(msg):
     if msg.content == "!off" :
       cleanoff = True
     if 'kaz' in formattedmsg or 'both' in formattedmsg or cleanoff :
-      if msg.author.name in layers[l].kaz.scouts :
-        layers[l].kaz.scouts.remove(msg.author.name)
+      if personName in layers[l].kaz.scouts :
+        layers[l].kaz.scouts.remove(personName)
       flag = True
     if 'doom' in formattedmsg or 'both' in formattedmsg or cleanoff :
-      if msg.author.name in layers[l].doom.scouts :
-        layers[l].doom.scouts.remove(msg.author.name)
+      if personName in layers[l].doom.scouts :
+        layers[l].doom.scouts.remove(personName)
       flag = True
   
   #!kill command
